@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Class Time Table</title>
+    <style>
+        table{
+            margin-left: 180px;
+        }
+        h3{
+            text-align: center;
+        }
+        th{
+            background-color:grey;
+        }
+        tr:nth-child(odd){
+            background-color:rgb(241, 234, 234);
+        }
+        table ,td,th{
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        .col1{
+            text-align: center; 
+        }
+        .lunch{
+          display: flex;
+          flex-direction:column; 
+        
+        }
+
+    </style>
+</head>
+<body>
+    <!-- table headig -->
+    <h3><i>Table: Class Time Table</i></h3>
+    <!-- timetable for students -->
+    <table>
+    <tr>
+        <!-- tableheadings -->
+        <th>Day/Period</th>
+        <th>9:30-10:20</th>
+        <th>10:20-11:10</th>
+        <th>11:10-12:00</th>
+        <th>12:00-12:40</th>
+        <th>12:40-01:30</th>
+        <th>01:30-02:20</th>
+        <th>02:20-03:10</th>
+        <th>03:10-4:00</th>
+    </tr>
+    <tr>
+        <td>Monday</td>
+        <td>Maths</td>
+        <td>English</td>
+        <td>Chemistry</td>
+        <td  rowspan="6"><div class="lunch">
+            <div>L</div><div>U</div><div>N</div><div>C</div><div>H</div></div>
+        </td>
+        <td colspan="3" class="col1">Lab</td>
+        <td>Physics</td>
+ </tr>
+ <tr>
+    <td>Tuesday</td>
+    <td colspan="3" class="col1">Lab</td>
+    <td>English</td>
+    <td>Maths</td>
+    <td>Chemistry</td>
+    <td>Sports</td>
+ </tr>
+<tr>
+    <td>Wednesday</td>
+    <td>Maths</td>
+    <td>Physics</td>
+    <td>English</td>
+    <td>Chemistry</td>
+    <td colspan="3" class="col1">Library</td>
+</tr>
+<tr>
+    <td>Thursday</td>
+    <td>Maths</td>
+    <td>English</td>
+    <td>Chemistry</td>
+    <td colspan="3" class="col1">Lab</td>
+    <td>Physics</td>
+</tr>
+<tr>
+    <td>Friday</td>
+    <td colspan="3" class="col1">Lab</td>
+    <td>Maths</td>
+    <td>English</td>
+    <td>Chemistry</td>
+    <td>Physics</td>
+</tr>
+<tr>
+    <td>Saturday</td>
+    <td>Maths</td>
+    <td>English</td>
+    <td>Chemistry</td>
+    <td colspan="3" class="col1">Seminar</td>
+    <td>Physics</td>
+</tr>
+    </table>
+</div>
+</body>
+</html>
